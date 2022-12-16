@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+
+      .CopyRightText {
+        font-size: 10px;
+      }
+      .footerTitle {
+        font-size: 11px;
+        font-weight: bold;
+      }
+      .footerText {
+        font-size: 10px;
+      }
+      .bg-lightgray {
+        background-color: #eee;
+      }
+    </style>
+  </head>
+  <body class="vw-100">
+    <!-- <img src="https://picsum.photos/300/200/?random=10" /> -->
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">隨意鳥地方</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 補 flex-grow-0 來讓元件吃到 justify-content:between的設定 -->
+        <div class="collapse navbar-collapse flex-grow-0" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">菜單餐點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">周邊景點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">莊園位置</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#information">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">咖啡故事</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 輪播 -->
+    <div class="container-fluid p-0">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://picsum.photos/300/200/?random=10"
+              class="d-block w-100"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/300/200/?random=9"
+              class="d-block w-100"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://picsum.photos/300/200/?random=8"
+              class="d-block w-100"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!-- 卡片*3 -->
+    <div class="section01 w-100  mx-auto">
+      <div class="container">
+        <div class="row m-0">
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="card">
+              <img
+                src="https://picsum.photos/300/200/?random=5"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">技術一座，你可以破。</h5>
+                <p class="card-text">
+                  和我一台造成字元多次成人我對再也優秀樂隊問題進一步，這樣反正接近讓你光臨預覽抽菸區至少，學會禮品文檔，年輕返回落實受到電池商務是一種翻譯支付承擔尷尬味道如果。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mt-4 ">
+            <div class="card">
+              <img
+                src="https://picsum.photos/300/200/?random=6"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">技術一座，你可以破。</h5>
+                <p class="card-text">
+                  和我一台造成字元多次成人我對再也優秀樂隊問題進一步，這樣反正接近讓你光臨預覽抽菸區至少，學會禮品文檔，年輕返回落實受到電池商務是一種翻譯支付承擔尷尬味道如果。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mt-4">
+            <div class="card">
+              <img
+                src="https://picsum.photos/300/200/?random=7"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">技術一座，你可以破。</h5>
+                <p class="card-text">
+                  和我一台造成字元多次成人我對再也優秀樂隊問題進一步，這樣反正接近讓你光臨預覽抽菸區至少，學會禮品文檔，年輕返回落實受到電池商務是一種翻譯支付承擔尷尬味道如果。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 按鈕*2 -->
+    <div class="section02 w-100 mx-auto mt-4 bg-lightgray">
+      <div class="container-fluid p-0">
+        <div class="row m-0 w-100 flex-column align-items-center flex-lg-row">
+          <!-- 圖 -->
+          <div class="col-12 col-lg-6 p-0">
+            <img src="https://picsum.photos/300/200/?random=4" class="w-100" />
+          </div>
+          <!-- 文案 -->
+          <div class="col-12 col-lg-6">
+            <h3 class="text-center mt-4 mx-auto">Dream Shop</h3>
+            <p class="text-center mt-4 mx-auto ps-3 pe-3">
+              容量商標圍繞，手冊四個承認理論，並在偉大重複將來決策登陸指數一體面前，經理傳輸依靠一路認為先生，走向首先製品出發一起角度要去恐怕歡迎光臨竟然，規範戰士屏東影視售價汽車可見業務夥伴亞洲恢復，本站交友機會有些有人平靜商品複製先進性評論想到多多練習，一份疾病基地很少是由實現廠商據說強烈平靜交通總體保證當年社區，發展仔細手續狀態日月潭大小依靠，太麻里宣傳注重演員學習股票英語年齡請在我看等等傳奇，姓名開展。
+            </p>
+            <a href="#" class="btn btn-success mt-2 w-50 d-block mx-auto"
+              >Something New</a
+            >
+          </div>
+        </div>
+        <div
+          class="row m-0 w-100 flex-column align-items-center mt-4 mt-lg-0 bg-lightgray flex-lg-row-reverse"
+        >
+          <!-- 圖 -->
+          <div class="col-12 p-0 col-lg-6">
+            <img src="https://picsum.photos/300/200/?random=4" class="w-100" />
+          </div>
+          <!-- 文案 -->
+          <div class="col-12 col-lg-6">
+            <h3 class="text-center mt-4 mx-auto">Dream Shop</h3>
+            <p class="text-center mt-4 mx-auto ps-3 pe-3">
+              容量商標圍繞，手冊四個承認理論，並在偉大重複將來決策登陸指數一體面前，經理傳輸依靠一路認為先生，走向首先製品出發一起角度要去恐怕歡迎光臨竟然，規範戰士屏東影視售價汽車可見業務夥伴亞洲恢復，本站交友機會有些有人平靜商品複製先進性評論想到多多練習，一份疾病基地很少是由實現廠商據說強烈平靜交通總體保證當年社區，發展仔細手續狀態日月潭大小依靠，太麻里宣傳注重演員學習股票英語年齡請在我看等等傳奇，姓名開展。
+            </p>
+            <a href="#" class="btn btn-success mt-2 w-50 d-block mx-auto"
+              >Something New</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 地圖 -->
+    <div class="section03 bg-lightgray">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 ratio ratio-16x9 mt-4 mt-lg-0">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.4881782493203!2d121.47688031537851!3d25.017501845105706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a83a636b8821%3A0xa0c47a360e7e8873!2z5paw5YyX6IC26KqV5Z-O!5e0!3m2!1szh-TW!2stw!4v1670478653575!5m2!1szh-TW!2stw"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 表單 -->
+    <div class="section04 bg-lightgray">
+      <div class="container-fluid container-lg">
+        <div class="row">
+          <div class="col-12 mt-5">
+            <h1 class="text-center" id="information">聯絡我們</h1>
+            <h5 class="text-center mt-3 form-subtitle">
+              一閃一閃亮晶晶，滿天都是小星星
+            </h5>
+            <p class="text-center form-text">
+              任何服務問題或建議，歡迎您透過客服表單告知我們，謝謝！
+            </p>
+          </div>
+        </div>
+        <form>
+        <div class="row align-items-lg-center">
+              <div class="col-12 col-lg-6 mb-3 ps-3 pe-4">
+                <label for="Name" class="form-label">姓名</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" />
+                  <div class="input-group-text">
+                    先生
+                    <input
+                      name="gender"
+                      class="form-check-input mt-0 pe-2"
+                      type="radio"
+                      value="先生"
+                    />
+                    女士
+                    <input
+                      name="gender"
+                      class="form-check-input mt-0"
+                      type="radio"
+                      value="女士"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 mb-3 ps-3 pe-4">
+                <label for="Phone" class="form-label">電話</label>
+                <input type="text" class="form-control" id="Phone" />
+              </div>
+              <div class="col-12 col-lg-6 mb-3 ps-3 pe-4">
+                <label for="Email" class="form-label">電子信箱</label>
+                <input type="text" class="form-control" id="Email" />
+              </div>
+              <div class="col-12 col-lg-6 mb-3 ps-3 pe-4">
+                <label for="Select" class="form-label">問題類型</label>
+                <select class="form-select">
+                  <option selected>餐飲建議</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div class="col-12 mb-3 ">
+                <label for="Textarea" class="form-label">意見需求</label>
+                <textarea
+                  class="form-control"
+                  id="Textarea"
+                  rows="5"
+                ></textarea>
+              </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+              <div class="mb-5 form-check">
+                <input type="checkbox" class="form-check-input" id="Check" />
+                <label class="form-check-label" for="Check">訂閱最新資訊</label>
+              </div>
+            </div>
+        </div>
+        
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col d-flex justify-content-center align-items-center">
+            <button
+            type="submit"
+            class="btn btn-secondary mb-3 ">
+            送出
+           </button>
+         </div>
+        </div>
+             
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer bg-black text-white pb-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-6 col-lg-3 pt-5 d-lg-flex justify-content-center align-items-center ps-5">
+            <img
+              src="https://picsum.photos/300/300/?random=10"
+              class="rounded-circle w-50"
+            />
+          </div>
+          <div class="col-6 col-lg-3 pt-5 ps-5 ">
+            <p class="footerTitle ">Address</p>
+            <p class="footerText">
+              Mayday Street Name<br />
+              Taipei,Taiwan
+            </p>
+          </div>
+          <div class="col-6 col-lg-3 pt-lg-5 ps-5">
+            <p class="footerTitle">Links</p>
+            <p class="footerText">
+              Website builder<br />
+              Download Winds <br />
+              Download Mac
+            </p>
+          </div>
+          <div class="col-6 col-lg-3 pt-lg-5 ps-5">
+            <p class="footerTitle">Contacts</p>
+            <p class="footerText">
+              Email:cloris222@gmail.com<br />
+              Phone:(02)12341487 <br />
+              Fax:+1(02)12341487
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 pt-lg-5 d-flex justify-content-center align-items-center">
+            <p class="text-white text-center CopyRightText">
+              Copyright © 2022 YungChien change All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.js"></script>
+  </body>
+</html>
